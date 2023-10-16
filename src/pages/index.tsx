@@ -1,41 +1,38 @@
-import React from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import React from "react";
+import Layout from "@theme/Layout";
+import "./Home.css";
 
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
-
-export default function Home(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
+function HomePage() {
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
+      title="Ensemble Vocal de Neuilly"
+      description="Description will go into a meta tag in <head />"
+    >
       <main>
-        <HomepageFeatures />
+        <div className="container">
+          <div className="left">
+            <img
+              src="https://github.com/RaEace/evn-docusaurus/blob/main/static/img/logo.jpg"
+              alt="My Photo"
+            />
+          </div>
+          <div className="right">
+            <p className="subtitle">
+              Médaille d’argent au 18ème Festival de l’Avent ‘Petr Eben’ de
+              Prague
+            </p>
+            <a href="/concerts" className="btn">
+              PROCHAIN CONCERT LE 16 JUIN 2022
+            </a>
+            <p className="title">Recrutement</p>
+            <p className="description">
+              L’EVN recherche des sopranos, des ténors et des basses &gt;&gt;
+            </p>
+          </div>
+        </div>
       </main>
     </Layout>
   );
 }
+
+export default HomePage;

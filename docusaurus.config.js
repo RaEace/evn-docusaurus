@@ -64,7 +64,8 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "📚 EVN",
+        title: "EVN",
+        style: "dark",
         hideOnScroll: true,
         // logo: {
         //   alt: "Site Logo",
@@ -76,143 +77,88 @@ const config = {
         //   height: 32,
         // },
         items: [
-          { to: "/blog", label: "👨🏻‍🌾 博客", position: "right" },
-          {
+          { 
+            label: "choeur", 
             position: "right",
-            label: "👨🏻‍🎓 维基",
             items: [
               {
-                label: "基础入门",
-                to: "/getting-started",
+                label: "Le choeur",
+                to: "/le-choeur",
               },
               {
-                label: "程序设计语言",
-                to: "/programming-language",
+                label: "Composition",
+                to: "/composition",
               },
               {
-                label: "数据结构与算法",
-                to: "/structures-algorithms",
+                label: "Fonctionnement",
+                to: "/fonctionnement",
               },
-              {
-                label: "计算机组成",
-                to: "/computer-composition",
-              },
-              {
-                label: "计算机网络",
-                to: "/computer-network",
-              },
-              {
-                label: "计算机安全",
-                to: "/computer-security",
-              },
-              {
-                label: "操作系统",
-                to: "/operating-system",
-              },
-              {
-                label: "数据库系统",
-                to: "/database-system",
-              },
-              {
-                label: "软件工程",
-                to: "/software-engineering",
-              },
-              {
-                label: "编译原理",
-                to: "/compilation-principle",
+               {
+                label: "Recrutement",
+                to: "/recrutement",
               },
             ],
           },
           {
             position: "right",
-            label: "👨‍💻 职业",
+            label: "Direction",
             items: [
               {
-                label: "求职之路",
-                to: "/roadmap",
+                label: "Chef de choeur",
+                to: "/chef-de-choeur",
               },
               {
-                label: "SRE 工程师",
-                to: "/sre-engineer",
-              },
-              {
-                label: "Data 工程师",
-                to: "/data-engineer",
+                label: "Anciens chefs",
+                to: "/anciens-chefs",
               },
             ],
           },
           {
             position: "right",
-            label: "💼 组织",
+            label: "Répertoire",
+            to: "/repertoire",
+          },
+          {
+            position: "right",
+            label: "Concerts",
             items: [
               {
-                label: "自由社区",
-                to: "/org",
+                label: "A venir",
+                to: "/a-venir",
               },
               {
-                label: "现代企业",
-                to: "/com",
+                label: "Archives",
+                to: "/archives",
+              },
+              
+            ],
+          },
+          {
+            position: "right",
+            label: "Médias",
+            items: [
+              {
+                label: "Albums photos",
+                to: "/albums-photos",
               },
               {
-                label: "国家政府",
-                to: "/gov",
+                label: "Vidéos",
+                to: "/videos",
+              },
+              {
+                label: "Affiches",
+                to: "/affiches",
               },
             ],
           },
-          { to: "/life", label: "🚴🏻‍♀️ 生活", position: "right" },
-          { to: "/journal", label: "📽️ 日志", position: "right" },
+          {
+            position: "right",
+            label: "contacts",
+            to: "/contacts",
+          }  
         ],
       },
-      footer: {
-        style: "dark",
-        links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Tutorial",
-                to: "/docs/intro",
-              },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-    }),
+    })
 };
 
 module.exports = config;
